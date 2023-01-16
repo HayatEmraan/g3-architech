@@ -38,7 +38,7 @@ header{
     margin: 50px auto 33px;
 }
 .brand-content{
-    width: 862px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -245,4 +245,102 @@ footer > p{
     color: white;
     text-align: center;
     margin-top: 50px;
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+    .g3-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav-header{
+        display: none;
+    }
+    .brand-banner{
+        width: 100%;
+    }
+    .brand-banner h3{
+        font-size: 40px;
+        width: 90%;
+    }
+    .brand-banner-img img{
+        width: 90%;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .feature-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-img img{
+        width: 24em;
+        height: 18em;
+    }
+    .feature-content h3{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .feature-content p{
+        text-align: center;
+    }
+    .feature-content .nav-special{
+        margin-left: 38%;
+    }
+    .features-u-love{
+        flex-direction: column;
+    }
+    .feature-u-love-content{
+        width: 95%;
+        margin: auto;
+    }
+    .u-love-img img{
+        width: 100%;
+    }
+    .nav-love-u{
+        bottom: -17%;
+        left: 35%;
+    }
+    .fact-award{
+        flex-direction: column;
+        gap: 10px 0;
+    }
+    .fact-content-global{
+        margin: auto;
+        width: 80%;
+    }
+    .fact-content{
+        margin-left: 13%;
+    }
+    .sponsor-company{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .sponsor-company img{
+        margin: auto;
+    }
+    .bonus-footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bonus-footer-menu{
+        margin: auto;
+    }
+    .logo-content{
+        margin: auto;
+        text-align: center;
+    }
+    .g3-profile{
+        margin-left: 45px;
+        margin-bottom: 20px;
+    }
+    .partner-news{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .subcription{
+        width: 300px;
+        margin: auto;
+    }
+    footer{
+        height: 100%;
+    }
 }
